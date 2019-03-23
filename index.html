@@ -1,0 +1,79 @@
+<html>
+  <head>
+      <style type="text/css">
+        body {
+          font-family:  Tahoma, sans-serif;
+          padding:      0;
+          margin:       0;
+        }
+        h1 {
+          background-color: #001230;
+          color:        #dbdbdb;
+          padding:      0;
+          margin:       0;
+          text-align:   center;
+          font-size:    22;
+          font-weight:  bold;
+        }
+        #content {
+          padding:      0;
+          border:       solid;
+          border-width: 1;
+          border-color: grey;
+          font-size:    10;
+          font-style:   normal;
+          font-weight:  normal;
+          width:        250;
+          margin:       auto;
+        }
+        #content h2 {
+          background:	  #F0F0F0;
+          padding:      2;
+          margin:       0;
+          text-align:   center;
+        }
+        p {
+          color:        black;
+        }
+		}
+      </style>
+  </head>
+
+  <body>
+    <h1>Welcome</h1>
+    <br /><br /><br />
+    <div id="mainarea">
+      <script>
+      pagestate = "default";
+      if pagestate = "caseloaded" {
+        document.getElementById("casestatus").style.visibility="hidden";
+      }
+      </script>
+      <div id="content">
+          <h2>Onboarding Status</h2>
+          <p>
+            Please enter your 14-digit Application Number (URN) below.
+          </p>
+          <br />
+          <input id="crdurn" />
+          <button type="submit">Load</button>
+          <br />
+          <div id="casestatus">
+            <table>
+            <tr>
+              <td><bold>MID</bold></td>
+              <td>1234</td>
+            </tr>
+            <tr>
+              <td><bold>TID</bold></td>
+              <td>9999</td>
+            </tr>
+            </table>
+
+          </div>
+      </div>
+      </script>
+    </div>
+  </body>
+
+</html>
