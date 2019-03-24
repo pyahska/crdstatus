@@ -12,7 +12,7 @@ def returnstatus():
         urn = reqjson["urn"]
     except:
         return("Invalid Request")
-    resp = requests.post('https://www.firstdatamerchantservices.com/MerchantOnBoarding/inquiryService', headers=hdr, json={"urn": urn})
+    resp = requests.post('https://www.fdmerchantservices.com/MerchantOnBoarding/inquiryService', headers=hdr, json={"urn": urn})
     return(resp.content)
 
 if __name__ == '__main__':
